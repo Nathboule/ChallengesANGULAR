@@ -8,8 +8,6 @@ import { Block } from '../block';
 })
 export class BlockComponent implements OnInit {
 
-  constructor() { }
-
   block: Block = {
     name: 'A B C'
   };
