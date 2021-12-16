@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card" style="width: 25rem;">
+    <div class="card-header">Profil Développeur</div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Nom : {{ developer.lastName }}</li>
+      <li class="list-group-item">Prénom : {{ developer.firstName }}</li>
+      <li class="list-group-item">Age : {{ developer.age }} ans</li>
+      <li class="list-group-item">Sexe : {{ developer.sex }}</li>
+      <li class="list-group-item">Bio : {{ developer.bio }}</li>
+      <div class="card-header">Skills</div>
+      <li class="list-group-item" *ngFor="let skill of developer.skills">
+        <app-skill [skill]="skill"></app-skill>
+      </li>
+    </ul>
+    </div>
+</div>
