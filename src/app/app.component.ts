@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ChallengesAngular';
+
+  public onomatopeias: Array<string> = [];
+
+  onReceiveNewOnomatopia(newOnompatopia: string) {
+    this.onomatopeias.push(newOnompatopia);
+  }
 }
