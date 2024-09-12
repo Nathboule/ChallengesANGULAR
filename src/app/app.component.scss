@@ -1,0 +1,30 @@
+
+.topLeftBlock,
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin : 5px;
+}
+
+.topRightBlock
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin : 5px;
+}
+
+.bottomLeftBlock {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin : 5px;
+}
+
+.bottomRightBlock {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin : 5px;
+}
